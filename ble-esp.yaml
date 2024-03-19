@@ -1,0 +1,38 @@
+esphome:
+  name: ble-esp
+  friendly_name: BLE_ESP
+  # platformio_options:
+  #   board_build.flash_mode: dio
+  #   board_build.f_cpu: 40000000L
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+    # version: 2.0.3
+
+wifi:
+  ssid: "Hildebrand"
+  password: "Mortimer16"
+
+# web_server:
+#   port: 80
+
+# Enable logging
+# logger:
+#   level: VERBOSE
+
+# external_components:
+#   - source: 
+#       type: git
+#       url: https://github.com/nemetcristian/Creavision_BLE
+#       ref: master
+#     components: [Creavision_BLE]
+external_components:
+  - source:
+      type: local
+      path: "G:/ESP_home_Creavision_Ble/Creavision_BLE/components/"
+
+
+Creavision_BLE:
+  
